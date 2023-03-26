@@ -1,0 +1,217 @@
+body {
+    background: #f5f5dc;
+}
+
+.cartContainer {
+    display: flex;
+    background: #f5f5dc;
+}
+
+.lead { font-family: 'Quicksand'; }
+
+.header-bar {
+    background-image: linear-gradient(green, teal);
+    text-align: center;
+	position: relative;
+	width: 100%;
+	min-width: 300px;
+	height: 50px;
+	border: 10px solid transparent;
+	border-top: 10px solid #fffa;
+	border-left: 10px solid #fffa;
+	box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.header-bar::after {
+	content: '';
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 30%;
+	height: 49px;
+	border: 10px solid transparent;
+	border-bottom: 10px solid #fffa;
+	border-right: 10px solid #fffa;
+    
+	transition: 0.3s linear all;
+}
+
+.slider-menu {
+    /* border-bottom: 3px solid #000; */
+	top: 0;
+	right: 0;
+	display: flex;
+    text-align: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+
+.slider-menu > li {
+    display: inline-flex;
+	padding: 14px;
+	margin-left: 2px;
+	font-family: 'Quicksand', sans-serif;
+	color: #000;
+	cursor: pointer;
+	transition: 0.3s linear all;
+	user-select: none;
+    text-align: left;
+}
+
+
+.slider-menu > .litext:hover {
+	color: #050;
+	box-shadow: 0 40px 2px rgba(0, 0, 0, 0.15) inset;
+}
+
+.aeu-signature {
+	position: fixed;
+	top: 5px;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 15px;
+	line-height: 30px;
+	background-color: #000;
+	padding: 5px 10px;
+	border-radius: 25px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.aeu-signature { font-family: "Quicksand"; }
+.aeu-signature > img { height: 30px; }
+
+.buttons-signup {
+    padding-left: 1100px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* CSS for button in header*/
+.button-38 {
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .5rem .75rem;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    padding-bottom: 5px;
+}
+
+.button-38:hover {
+    background-color: rgb(249,250,251);
+}
+
+.button-38:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 12fr 2fr;
+    grid-gap: 10px;
+    padding: 10px;
+    margin: auto;
+  }
+
+  /* Define the grid items */
+  .grid-item {
+    background-color: white;
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+    border: 3px solid #000;
+  }
+
+.footer {
+    background-color: black;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: center;
+    bottom:0;
+    position: absolute;
+    width: 100%;
+  }
+
+  p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+  }
+
+  .cartsItems {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    list-style: none;
+    text-align: left;
+  }
+
+  .items1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    display: flex;
+  }
+
+  .itemsInfo {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    padding-left: 50px;
+  }
+
+  img {
+    border: 3px solid #000;
+  }
+
+/* CSS */
+.button-37 {
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-37:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
+}
+
+p {
+
+}

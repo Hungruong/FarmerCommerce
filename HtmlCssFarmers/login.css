@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+  html{
+    height: 100%;
+  }
+  body {
+    font-family: sans-serif;
+    background-color: #abe6b1;
+    color: transparent; 
+    height: 100%;
+    margin: 0;
+  }
+  .farmer-background {
+    background-image: url("farmers.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100%; 
+    margin: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #abe6b1; 
+    position: relative; 
+  }
+  
+  .container {
+    background-color: #abe6b1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  }
+  
+  .login-box {
+    width: 400px;
+    height: 500px;
+    background: #ffffff;
+    color: #000;
+    padding: 40px;
+    position: relative;
+  }
+  
+  h2 {
+    margin: auto;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .user-box {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #b77878;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #b77878;
+    outline: none;
+    background: transparent;
+  }
+  
+  .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #000000;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .user-box input:focus ~ label,
+  .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #26ca36;
+    font-size: 12px;
+  } 
+  
+  a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    border: 2px solid #b77878;
+    padding: 12px 28px;
+    margin-top: 40px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  a span {
+    position: absolute;
+    display: block; 
+  }
+ 
+  a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: all 0.5s ease;
+  }
+  
+  a span:nth-child(2) {
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 0;
+    background-color: #000000;
+    transition: all 0.5s ease 0.3s;
+  }
